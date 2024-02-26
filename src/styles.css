@@ -1,33 +1,280 @@
-html{
+html {
     font-size: 14px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
-    font-family: roboto, sans-serif;
+    font-family: inter, sans-serif;
     font-size: 1rem;
 
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
-h2{
+
+h2 {
     font-size: 2rem;
 }
-h3{
+
+h3 {
     font-size: 1.75rem;
 }
-h4{
+
+h4 {
     font-size: 1.5rem;
 }
-h5{
+
+h5 {
     font-size: 1.25rem;
 }
-h6{
+
+h6 {
     font-size: 1rem;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: inter, sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
+}
+
+.container {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #212121;
+}
+
+.container-image {
+    width: 350px;
+    object-fit: cover;
+    height: 750px;
+    opacity: 80%;
+}
+
+ul {
+    display: none;
+}
+
+#checkbtn {
+    float: right;
+    font-size: larger;
+}
+
+#check {
+    display: none;
+}
+
+.text-title {
+    position: absolute;
+    top: 250px;
+    left: 32px;
+    width: 300px;
+}
+
+.box {
+    width: 90px;
+    height: 15px;
+    background-color: white;
+}
+
+h1 {
+    font-family: Libre Caslon Display;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.sub-text {
+    font-family: Inter;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 200;
+    line-height: 20.33px;
+}
+
+.subsub-text {
+    width: 150px;
+    height: 37px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+.blog-card:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.logo {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 22.4px;
+}
+
+#checkbtn {
+    position: absolute;
+    top: 33px;
+    left: 312px;
+    color: #FFFFFF;
+}
+
+.card-heading {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-card-wrapper {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blog-image {
+    max-width: 290px;
+}
+
+.blog-card-body {
+    padding-left: 32px;
+}
+
+.blog-title {
+    font-size: 18px;
+    padding-right: 12px;
+    line-height: 24.2px;
+    font-weight: 700;
+}
+
+.blog-info {
+    padding-top: 16px;
+    font-family: Inter;
+    text-align: left;
+    color: #B7B7B7;
+    font-size: 13px;
+
+}
+
+.blog-likes {
+    padding-bottom: 20px;
+    float: right;
+    padding-right: 13px;
+    color: #D9852C;
+    font-size: 12px;
+
+}
+
+@media screen and (min-width:576px) {
+    .blog-card-wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-heading{
+        max-width: 650px;
+    }
+
+    .blog-card {
+        width: calc((100% - 10px - 6px)/3);
+    }
+    .container{
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-image{
+        width: 730px;
+    }
+    #blog-image{
+        max-width: 212px;
+        width: 100%;
+    }
+    .blog-likes{
+        padding-bottom: 10px;
+    }
+    
+    .text-title{
+        width: 400px;
+    }
+    #checkbtn {
+        position: absolute;
+        top: 33px;
+        left: 690px;
+        color: #FFFFFF;
+    }
+}
+@media screen and (min-width:992px){
+    .blog-card-wrapper{
+        max-width: 920px;
+    }
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-image{
+        width: 100%;
+        object-fit: cover;
+        opacity: 70%;
+    }
+    #blog-image{
+        max-width: 300px;
+        width: 100%;
+    }
+    #checkbtn{
+        display: none;
+    }
+    .text-title{
+        width: 500px;
+    }
+    .card-heading{
+        max-width: 920px;
+    }
+    ul{
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 500px;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #FFFFFF;
+        
+    }
+    h1{
+       font-size: 50px; 
+    }
+    
+
 }
